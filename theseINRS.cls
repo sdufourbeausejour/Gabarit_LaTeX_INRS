@@ -173,8 +173,10 @@
 \fi
 \if@hyperref
   \RequirePackage[%
-		plainpages=false,bookmarks,linktocpage,hypertexnames=false]{%
+		pdfa, plainpages=false, bookmarks, linktocpage, hypertexnames=false]{%
     hyperref}[2002/09/12]
+  \RequirePackage{hyperxmp}
+  \hypersetup{pdfapart=1,pdfaconformance=b}
 \else
 \fi
 %
